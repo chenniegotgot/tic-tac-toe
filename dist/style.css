@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #5a666b;
+  margin: 2rem 0;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  font-family: 'Amatic SC', sans-serif;
+  color: #ffffff;
+}
+
+section {
+  text-align: center;
+}
+
+#board {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.restart {
+  font-family: "Amatic SC", sans-serif;
+  margin: 35px;
+  padding: 8px;
+  font-size: 25px;
+}
+
+.row:first-child .col:first-child,
+.row:first-child .col:nth-child(2),
+.row:first-child .col:nth-child(3) {
+  border-top: none;
+}
+
+.row:last-child .col:first-child,
+.row:last-child .col:nth-child(2),
+.row:last-child .col:nth-child(3) {
+  border-bottom: none;
+}
+
+.col:nth-child(3n + 1),
+.col:nth-child(3n + 1):hover {
+  border-left: none;
+}
+
+.col:nth-child(3n + 3),
+.col:nth-child(3n + 3):hover {
+  border-right: none;
+}
+
+.row,
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  cursor: pointer;
+  border: 3px solid #779ca9;
+  height: 100px;
+  width: 100px;
+  line-height: 0;
+  font-size: 40px;
+}
+
+.col:hover {
+  border: 5px solid #3d5963;
+}
+
+.x, .o {
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  line-height: 75px;
+  font-size: 85px;
+}
+
+.x, #score-x {
+  color: #daffc5;
+}
+
+.o, #score-o {
+  color: #E2B8AC;
+}
+
+.message {
+  margin: .5rem 0;
+  text-align: center;
+  color: #b5ecff;
+  font-size: 30px;
+}
+
+section h1 {
+  font-size: 65px;
+  line-height: 0px;
+}
+
+.match {
+  color: #ea3535;
+}
